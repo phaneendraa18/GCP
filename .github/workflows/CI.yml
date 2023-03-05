@@ -29,7 +29,7 @@ jobs:
       - name: To run the assignment10 script on git
         env:
           gcloud_token: ${{ secrets.GCP_AUTH_TOKEN }}
-          project_token: ${{secrets.PROJECT }}
-          tag: ${{secrets.FIREWALL_TAG }}
+          project_token: ${{ secrets.PROJECT }}
+          tag: ${{ secrets.FIREWALL_TAG }}
         run: |
           assignment10/VmCreation.sh $gcloud_token $project_token $tag
